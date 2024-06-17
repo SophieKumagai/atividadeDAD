@@ -23,7 +23,7 @@ const btnSkip = document.getElementById("btnSkip");
 btnSkip.addEventListener("click", () => {
   const confirmation = window.confirm("Você tem certeza que deseja pular o exercício?");
   if (confirmation) {
-    window.open("../exercicio_5.1/exercicio_5.1.html", "_self");
+    window.open("../exercicio_5.1/index.html", "_self");
   }
 });
 
@@ -468,7 +468,7 @@ margin: 19px 0;
     rodape.style.opacity = "1"; // Fazer o rodapé reaparecer
     const btAvancar = document.getElementById("btnNext");
     btAvancar.addEventListener("click", () => {
-      window.open("../exercicio_5.1/exercicio_5.1.html", "_self");
+      window.open("../exercicio_5.1/index.html", "_self");
     });
 
     alternativa1.removeEventListener("click", () => {});

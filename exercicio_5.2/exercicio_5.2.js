@@ -22,7 +22,7 @@ btnSkip.addEventListener("click", () => {
     "Você tem certeza que deseja pular o exercício?"
   );
   if (confirmation) {
-    window.open("../exercicio_desafio/exercicio_desafio.html", "_self");
+    window.open("../exercicio_desafio/index.html", "_self");
   }
 });
 
@@ -528,7 +528,7 @@ margin: 19px 0;
       rodape.style.opacity = "1"; // Fazer o rodapé reaparecer
       const btAvancar = document.getElementById("btnNext");
       btAvancar.addEventListener("click", () => {
-        window.open("../exercicio_desafio/exercicio_desafio.html", "_self");
+        window.open("../exercicio_desafio/index.html", "_self");
       });
 
       alternativa1.removeEventListener("click", () => {});
@@ -941,7 +941,7 @@ margin: 19px 0;
       returnText.style.color = "#EE4035";
 
       btnNext.addEventListener("click", () => {
-        window.open("../exercicio_5.2/exercicio_5.2.html", "_self");
+        window.open("../exercicio_5.2/index.html", "_self");
       });
     }, 1000); // Tempo para a transição de opacidade
   }

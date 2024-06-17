@@ -112,7 +112,7 @@ function verificar() {
     } else if (cont ==  15) {
         window.alert("Parabéns, você concluiu o tutorial!")
         localStorage.setItem("tutorial", "entrou")
-        window.open("../exercicio_1/indexq1.html", "_self")
+        window.open("../exercicio_1/index.html", "_self")
     }
 }
 

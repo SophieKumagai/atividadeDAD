@@ -5,6 +5,6 @@ bt.addEventListener('click', () => {
     if (nome == undefined) {
         window.open('../pagina-inicial/index.html', '_self')
     } else {
-        window.open("../exercicio_1/indexq1.html", "_self")
+        window.open("../exercicio_1/index.html", "_self")
     }
 })

@@ -1006,7 +1006,7 @@ btnVerify.addEventListener("click", () => {
       }
 
       btnNext.addEventListener("click", () => {
-        window.open("./indexq1.html", "_self");
+        window.open("./index.html", "_self");
       });
     }, 1000); // Tempo para a transição de opacidade
   }
@@ -1114,7 +1114,7 @@ if (verif == "entrou") {
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.zIndex = "999";
-    iframe.setAttribute("src", "../tutorial/index_tutorial.html");
+    iframe.setAttribute("src", "../tutorial/index.html");
 
     div_tutorial.appendChild(iframe);
     circle.appendChild(div_tutorial);
