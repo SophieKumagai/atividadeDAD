@@ -9,7 +9,7 @@ deixe a resolução do windows em 100%
 deixa a resolução do navegador em 90%
 
 Para acessar o projeto, entre no link abaixo!
-[link]
+[https://sophiekumagai.github.io/]
 
 # 🤝 Colaboradores
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
