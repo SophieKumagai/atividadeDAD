@@ -1,5 +1,5 @@
 body{
-    background-color: #131f24;
+    background-color: #223741;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,10 +8,33 @@ body{
     color: white;
     text-align: center;
     font-family: 'ubuntu', sans-serif;
+    user-select: none;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 40px;
+}
+
+* {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
 }
  
 img{
     width: 25%;
+}
+
+header img {
+    width: 15%;
+    margin: 1% auto;
+    display: block;
+}
+
+header {
+    background-color: #131f24;
+    width: 100%;
 }
  
 div{
@@ -19,20 +42,51 @@ div{
     width: 50%;
     border-radius: 50px;
 }
- 
-h1{
-    font-size: 125%;
+
+div:hover{
+    background-color: #31718d;
 }
  
 li{
     list-style: none;
     margin: 1% auto;
 }
- 
-li :hover{
-    background-color: #2f424a;
-}
+
  
 a{
-    color: #31718d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #000;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.tema {
+    background-color: #131f24;
+    color: #fff;
+}
+
+#pikachu {
+    position: absolute;
+    left: 100px;
+    width: 80px;
+    top: 25px;
+}
+
+#lapras {
+    position: absolute;
+    right: 100px;
+    width: 110px;
+    top: -10px;
 }
