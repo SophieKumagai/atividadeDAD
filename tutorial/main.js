@@ -49,7 +49,7 @@ function verificar() {
     }  else if (cont == 3) {
         resposta = valor.value
         console.log(resposta)
-        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.insertone({nome:\"pikachu\",tipo1:\"eletrico\",tipo2:\"nenhum\",peso:6.0,altura:0.4,nivel:2})") {
+        if (resposta.toLowerCase().replace(/\s/g, "") == "db.pokemons.insertone({nome:\"pikachu\",tipo1:\"eletrico\",tipo2:\"nenhum\",peso:6.0,altura:0.4,nivel:2})") {
             valor.classList.add("invisivel")
             txt3.classList.remove("invisivel")
             txt3.classList.add("fadeInText")
@@ -70,7 +70,7 @@ function verificar() {
  
     }  else if (cont == 5) {
         resposta = valor.value
-        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.findone({nome:\"pidgey\"})") {
+        if (resposta.toLowerCase().replace(/\s/g, "") == "db.pokemons.findone({nome:\"pidgey\"})") {
             valor.classList.add("invisivel")
             txt4.classList.remove("invisivel")
             txt4.classList.add("fadeInText")
@@ -91,7 +91,7 @@ function verificar() {
     }else if (cont == 7) {
         bt_pular.classList.remove('invisivel')
         resposta = valor.value
-        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.deleteone({nome:\"torchic\"})") {
+        if (resposta.toLowerCase().replace(/\s/g, "") == "db.pokemons.deleteone({nome:\"torchic\"})") {
             valor.classList.add("invisivel")
             txt5.classList.remove("invisivel")
             txt5.classList.add("fadeInText")
@@ -112,7 +112,7 @@ function verificar() {
     }  else if (cont == 9) {
         bt_pular.classList.remove('invisivel')
         resposta = valor.value
-        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.updateone({nome:\"pidgey\"},{$set:{nome:\"pidgeotto\",nivel:18}})") {
+        if (resposta.toLowerCase().replace(/\s/g, "") == "db.pokemons.updateone({nome:\"pidgey\"},{$set:{nome:\"pidgeotto\",nivel:18}})") {
             valor.classList.add("invisivel")
             txt6.classList.remove("invisivel")
             txt6.classList.add("fadeInText")
