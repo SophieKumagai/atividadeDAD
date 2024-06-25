@@ -8,6 +8,7 @@ const txt5 = document.getElementById("parte5")
 const txt6 = document.getElementById("parte6")
 const bt_avancar = document.querySelector("#avancar")
 const bt_voltar = document.querySelector("#voltar")
+const bt_pular = document.querySelector("#pular")
 const valor = document.getElementById("valor")
 const nome = localStorage.getItem("name")
  
@@ -30,15 +31,22 @@ function verificar() {
         txt1.classList.add("invisivel")
         txt2.classList.remove("invisivel")
  
-        txt2.classList.add("fadeInText")
         txt1.classList.remove("fadeInText")
- 
-        valor.classList.add("invisivel")
+        txt2.classList.add("fadeInText")
  
         bt_voltar.classList.remove('desabilitado')
+ 
+        valor.classList.add("invisivel")
+        bt_pular.classList.add('invisivel')
     } else if (cont == 2) {
         txt2.classList.add("invisivel")
         valor.classList.remove("invisivel")
+ 
+        valor.value = ""
+ 
+        txt3.classList.add("invisivel")
+        txt3.classList.remove("fadeInText")
+        bt_pular.classList.remove('invisivel')
     }  else if (cont == 3) {
         resposta = valor.value
         console.log(resposta)
@@ -46,51 +54,77 @@ function verificar() {
             valor.classList.add("invisivel")
             txt3.classList.remove("invisivel")
             txt3.classList.add("fadeInText")
+            bt_pular.classList.add('invisivel')
         } else {
             cont -= 1
             window.alert("Poxa, parece que algo deu errado. Tente novamente!")
+            verificar()
         }
     } else if (cont == 4) {
         txt3.classList.add("invisivel")
-        valor.value = ""
         valor.classList.remove("invisivel")
+ 
+        valor.value = ""
+ 
+        txt4.classList.add("invisivel")
+        txt4.classList.remove("fadeInText")
+        bt_pular.classList.remove('invisivel')
+ 
     }  else if (cont == 5) {
         resposta = valor.value
         if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.findone({nome:\"pidgey\"})") {
             valor.classList.add("invisivel")
             txt4.classList.remove("invisivel")
             txt4.classList.add("fadeInText")
+            bt_pular.classList.add('invisivel')
         } else {
             cont -= 1
             window.alert("Poxa, parece que algo deu errado. Tente novamente!")
+            verificar()
         }
     } else if (cont == 6) {
         txt4.classList.add("invisivel")
-        valor.value = ""
         valor.classList.remove("invisivel")
+ 
+        valor.value = ""
+ 
+        txt5.classList.add("invisivel")
+        txt5.classList.remove("fadeInText")
+        bt_pular.classList.remove('invisivel')
     }else if (cont == 7) {
+        bt_pular.classList.remove('invisivel')
         resposta = valor.value
         if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.deleteone({nome:\"torchic\"})") {
             valor.classList.add("invisivel")
             txt5.classList.remove("invisivel")
             txt5.classList.add("fadeInText")
+            bt_pular.classList.add('invisivel')
         } else {
             cont -= 1
             window.alert("Poxa, parece que algo deu errado. Tente novamente!")
+            verificar()
         }
     } else if (cont == 8) {
         txt5.classList.add("invisivel")
-        valor.value = ""
         valor.classList.remove("invisivel")
+ 
+        valor.value = ""
+ 
+        txt6.classList.add("invisivel")
+        txt6.classList.remove("fadeInText")
+        bt_pular.classList.remove('invisivel')
     }  else if (cont == 9) {
+        bt_pular.classList.remove('invisivel')
         resposta = valor.value
         if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.updateone({nome:\"pidgey\"},{$set:{nome:\"pidgeotto\",nivel:18}})") {
             valor.classList.add("invisivel")
             txt6.classList.remove("invisivel")
             txt6.classList.add("fadeInText")
+            bt_pular.classList.add('invisivel')
         } else {
             cont -= 1
             window.alert("Poxa, parece que algo deu errado. Tente novamente!")
+            verificar()
         }
         bt_avancar.textContent = "Concluir"
     } else if (cont ==  10) {
@@ -101,8 +135,10 @@ function verificar() {
 }
  
 function voltar() {
-    cont -= 1
-    verificar()
+    if (cont>=0) {
+        cont -= 1
+        verificar()
+    }
 }
  
 function avancar() {
