@@ -56,8 +56,7 @@ function verificar() {
         valor.classList.remove("invisivel")
     }  else if (cont == 5) {
         resposta = valor.value
-        resposta = resposta.replace(/\s+/g, "")
-        if (resposta.toLowerCase() == "db.pokemons.findone({nome:\"pidgey\"})") {
+        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.findone({nome:\"pidgey\"})") {
             valor.classList.add("invisivel")
             txt4.classList.remove("invisivel")
             txt4.classList.add("fadeInText")
@@ -71,8 +70,7 @@ function verificar() {
         valor.classList.remove("invisivel")
     }else if (cont == 7) {
         resposta = valor.value
-        resposta = resposta.replace(/\s+/g, "")
-        if (resposta.toLowerCase() == "db.pokemons.deleteone({nome:\"torchic\"})") {
+        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.deleteone({nome:\"torchic\"})") {
             valor.classList.add("invisivel")
             txt5.classList.remove("invisivel")
             txt5.classList.add("fadeInText")
@@ -86,8 +84,7 @@ function verificar() {
         valor.classList.remove("invisivel")
     }  else if (cont == 9) {
         resposta = valor.value
-        resposta = resposta.replace(/\s+/g, "")
-        if (resposta.toLowerCase() == "db.pokemons.updateone({nome:\"pidgey\"},{$set:{nome:\"pidgeotto\",nivel:18}})") {
+        if (resposta.toLowerCase().replace(" ", "") == "db.pokemons.updateone({nome:\"pidgey\"},{$set:{nome:\"pidgeotto\",nivel:18}})") {
             valor.classList.add("invisivel")
             txt6.classList.remove("invisivel")
             txt6.classList.add("fadeInText")
