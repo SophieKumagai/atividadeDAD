@@ -1006,7 +1006,7 @@ btnVerify.addEventListener("click", () => {
       }
 
       btnNext.addEventListener("click", () => {
-        window.open("./index.html", "_self");
+        window.open("./indexq1.html", "_self");
       });
     }, 1000); // Tempo para a transição de opacidade
   }
@@ -1077,7 +1077,7 @@ const circle = document.querySelector("#circle_obj");
 const container = document.querySelector("#circle");
 
 window.addEventListener("load", () => {
-  //audio.play();
+  audio.play();
 });
 const verif = localStorage.getItem("tutorial");
 if (verif == "entrou") {
@@ -1114,7 +1114,7 @@ if (verif == "entrou") {
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.zIndex = "999";
-    iframe.setAttribute("src", "../tutorial/index.html");
+    iframe.setAttribute("src", "../tutorial/index_tutorial.html");
 
     div_tutorial.appendChild(iframe);
     circle.appendChild(div_tutorial);
@@ -1130,7 +1130,6 @@ window.addEventListener("storage", function (event) {
     console.log("Antigo valor:", event.oldValue);
     fadeOut(audio2, 1800);
     this.setTimeout(function () {
-      audio.play();
       window.location.reload();
     }, 100);
   }

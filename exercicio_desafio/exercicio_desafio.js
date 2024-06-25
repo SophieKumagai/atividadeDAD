@@ -14,7 +14,7 @@ const btnSkip = document.getElementById("btnSkip");
 btnSkip.addEventListener("click", () => {
   const confirmation = window.confirm("Você tem certeza que deseja pular o exercício?");
   if (confirmation) {
-    window.open("../tela_final/index.html", "_self");
+    window.open("../tela_final/tela_final.html", "_self");
   }
 });
 
@@ -472,7 +472,7 @@ strong {
       rodape.style.opacity = "1"; // Fazer o rodapé reaparecer
       const btAvancar = document.getElementById("btnNext");
       btAvancar.addEventListener("click", () => {
-        window.open("../tela_final/index.html", "_self");
+        window.open("../tela_final/tela_final.html", "_self");
       });
 
       alternativa1.removeEventListener("click", () => {});
@@ -900,7 +900,7 @@ strong {
       returnText.style.color = "#EE4035";
 
       btnNext.addEventListener("click", () => {
-        window.open("../exercicio_desafio/index.html", "_self");
+        window.open("../exercicio_desafio/exercicio_desafio.html", "_self");
       });
 
       

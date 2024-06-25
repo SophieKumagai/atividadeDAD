@@ -24,6 +24,11 @@ cardConceitos.addEventListener("click", () => {
     abrirLista("conteudo-conceitos")
 })
 
+const voltar = document.getElementById("voltar")
+voltar.addEventListener("click", () => {
+    window.open("../exercicio_1/indexq1.html", "_self")
+})
+
 const pesquisa = document.getElementById("pesquisa")
 
 pesquisa.addEventListener("keyup", () => {
@@ -56,3 +61,4 @@ function achar(valor) {
         texto.classList.add("invisivel")
     }
 }
+

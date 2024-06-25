@@ -224,7 +224,8 @@ strong {
   margin: 0 auto;
   width: 188px;
   height: 65px;
-  border: 5px solid #131f24;
+  border: 8px solid #ffffff0d;
+  border-radius: 20px;
 
   /* Estilizando o texto */
   color: #55646C;
@@ -238,7 +239,7 @@ strong {
 
 #btnTip:hover {
   background-color: #1d292e;
-  border: 5px solid #1d292e;
+  border: 8px solid #1d292e;
   border-radius: 20px;
   transition: 500ms;
   cursor: pointer;

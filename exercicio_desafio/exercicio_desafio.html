@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./exercicio_4.2.css">
-    <script src="./exercicio_4.2.js" defer></script>
+    <link rel="stylesheet" href="./exercicio_desafio.css">
+    <script src="./exercicio_desafio.js" defer></script>
     <link rel="shortcut icon" href="../assets/pokebola.png" type="image/x-icon">
     <title>PokeMongo</title>
 </head>
@@ -30,24 +30,27 @@
         <div class="return">
             <div id="returnBox">
                 <div id="returnHead">Retorno</div>
-                <p id ="returnText"></p>
+                <p id="returnText"></p>
             </div>
         </div>
 
         <div id="professor">
             <div class="dialogBox">
-                <div id="box"><p class="fadeInText">Agora, quais são os três pokemons mais pesados?</p></strong></div>
+                <div id="box"><p class="fadeInText">Utilizando a operação de agregação do MongoDB, você pode encontrar mais informações sobre ela no 
+                    <br><strong><a href="https://www.mongodb.com/docs/manual/aggregation/">SITE OFICIAL DE DOCUMENTAÇÃO MONGO</a></strong><br>
+                    conte quantos pokemon há em cada tipo principal.</div>
             </div>
             <img id="prof" src="../assets/profOAK.png" alt="Professor OAK">
             <div>
                 <div class="alternativasDiv">
                     <div class="aTop column">
-                        <div id="alternativa3" class="alternativa" draggable="true">.sort</div>
-                        <div id="alternativa2" class="alternativa" draggable="true">})</div>
-                        <div id="alternativa4" class="alternativa" draggable="true">({peso: -1})</div>
-                        <div id="alternativa6" class="alternativa" draggable="true">(3)</div>
-                        <div id="alternativa1" class="alternativa" draggable="true">db.pokemons.find({</div>
-                        <div id="alternativa5" class="alternativa" draggable="true">.limit</div>
+                        <div id="alternativa3" class="alternativa" draggable="true">$sortByCount: "tipo1"</div>
+                        <div id="alternativa2" class="alternativa" draggable="true">{</div>
+                        <div id="alternativa1" class="alternativa" draggable="true">db.pokemons.aggregate([</div>
+                        <div id="alternativa4" class="alternativa" draggable="true">}</div>
+                        <div id="alternativa5" class="alternativa" draggable="true">]</div>
+                        <div id="alternativa6" class="alternativa" draggable="true">)</div>
+
                     </div>
                     <div class="aBottom column">
                 
