@@ -33,7 +33,13 @@ btnVerify.addEventListener("click", () => {
   const rodape = document.getElementById("rodape");
 
   if (qSelect == 0) {
-    window.alert("Selecione uma alternativa");
+    const professorImg = document.getElementById("prof");
+    professorImg.classList.add("shake", "error");
+
+    setTimeout(() => {
+        professorImg.classList.remove("shake", "error");
+    }, 1000);
+
   } else if (qSelect == 2) {
     rodape.style.opacity = "0"; // Iniciar a transição de opacidade
     setTimeout(() => {
