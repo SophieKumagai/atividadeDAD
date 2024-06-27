@@ -177,6 +177,7 @@ pointer-events: none; /* Para impedir a interação com a imagem */
 body {
 background-color: #131f24;
 user-select: none;
+  overflow: hidden;
 }
 #prof {
 margin: 320px 0 0 100px;
@@ -587,6 +588,7 @@ pointer-events: none; /* Para impedir a interação com a imagem */
 body {
 background-color: #131f24;
 user-select: none;
+  overflow: hidden;
 }
 #prof {
 margin: 320px 0 0 100px;

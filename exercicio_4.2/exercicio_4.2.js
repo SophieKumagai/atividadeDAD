@@ -118,6 +118,8 @@ img {
 body {
 background-color: #131f24;
 user-select: none;
+  overflow: hidden;
+
 }
 #prof {
 margin: 320px 0 0 100px;
@@ -553,6 +555,8 @@ img {
 body {
 background-color: #131f24;
 user-select: none;
+  overflow: hidden;
+
 }
 #prof {
 margin: 320px 0 0 100px;

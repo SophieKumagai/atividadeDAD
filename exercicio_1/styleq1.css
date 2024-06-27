@@ -44,32 +44,7 @@
   }
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 
-.shake {
-  animation: shake 1.5s;
-}
-
-.error {
-  filter: hue-rotate(0deg) saturate(1000%);
-}
-
-#selectAlternativaH1 {
-  display: flex;
-  justify-content: center;
-}
 
 img {
     user-select: none; /* Para a maioria dos navegadores */
@@ -214,6 +189,7 @@ strong {
   font-weight: 500;
   font-size: 150%;
   font-style: normal;
+  
 }
 
 /* #returnHead:hover {
@@ -233,23 +209,25 @@ strong {
   margin-top: 30px;
 }
 
-#btnVerify {
-    margin: 0 auto;
-    background-color: #6d5f6d;
-    border: 2px solid #665b66;
-    border-bottom: 8px solid #5F555F;
-    border-radius: 20px;
-    width: 188px;
-    height: 65px;
 
-    /* Estilizando o texto */
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-size: 150%;
-    font-style: normal;
-    align-content: center;
-    text-align: center;
+
+#btnVerify {
+  margin: 0 auto;
+  background-color: #6d5f6d;
+  border: 2px solid #665b66;
+  border-bottom: 8px solid #5F555F;
+  border-radius: 20px;
+  width: 188px;
+  height: 65px;
+
+  /* Estilizando o texto */
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  font-style: normal;
+  align-content: center;
+  text-align: center;
 }
 
 #btnVerify:hover {
@@ -460,3 +438,4 @@ strong {
 .invisivel {
   display: none
 }
+
