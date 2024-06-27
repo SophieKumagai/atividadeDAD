@@ -1114,7 +1114,7 @@ if (verif == "entrou") {
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.zIndex = "999";
-    iframe.setAttribute("src", "../tutorial/index_tutorial.html");
+    iframe.setAttribute("src", "../tutorial/index.html");
 
     div_tutorial.appendChild(iframe);
     circle.appendChild(div_tutorial);
