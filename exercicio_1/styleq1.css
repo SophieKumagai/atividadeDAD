@@ -45,6 +45,7 @@
 }
 
 
+
 img {
     user-select: none; /* Para a maioria dos navegadores */
     -webkit-user-drag: none; /* Para navegadores baseados em WebKit */
@@ -120,15 +121,20 @@ body {
 #box {
   /* Estilizando a caixa */
   position: absolute;
-  width: 350px;
-  height: 100px;
+  width: 440px;
+  height: 152px;
   border: 5px solid #55646c;
   background-color: #1d292e;
   border-radius: 15px;
-  top: 400px;
+  top: 360px;
   left: 12%;
 }
 
+b {
+  font-size: 16px;
+  font-style: italic;
+  color: #43515a;
+}
 
 .answerLines {
   display: flex;
@@ -183,6 +189,7 @@ strong {
   font-weight: 500;
   font-size: 150%;
   font-style: normal;
+  
 }
 
 /* #returnHead:hover {
@@ -202,23 +209,25 @@ strong {
   margin-top: 30px;
 }
 
-#btnVerify {
-    margin: 0 auto;
-    background-color: #6d5f6d;
-    border: 2px solid #665b66;
-    border-bottom: 8px solid #5F555F;
-    border-radius: 20px;
-    width: 188px;
-    height: 65px;
 
-    /* Estilizando o texto */
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-size: 150%;
-    font-style: normal;
-    align-content: center;
-    text-align: center;
+
+#btnVerify {
+  margin: 0 auto;
+  background-color: #6d5f6d;
+  border: 2px solid #665b66;
+  border-bottom: 8px solid #5F555F;
+  border-radius: 20px;
+  width: 188px;
+  height: 65px;
+
+  /* Estilizando o texto */
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  font-style: normal;
+  align-content: center;
+  text-align: center;
 }
 
 #btnVerify:hover {
@@ -429,3 +438,4 @@ strong {
 .invisivel {
   display: none
 }
+

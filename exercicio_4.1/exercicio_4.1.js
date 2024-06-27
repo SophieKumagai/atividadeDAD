@@ -130,6 +130,7 @@ img {
 body {
   background-color: #131f24;
   user-select: none;
+  overflow: hidden;
 }
 #prof {
   margin: 320px 0 0 100px;
@@ -492,28 +493,12 @@ strong {
 
     resultText.textContent = 
     `
-          {
-        nome: "Snorlax",
-        tipo1: "Normal",
-        tipo2: null,
-        peso: 460.0,
-        altura: 2.1,
-      },
-      {
-        nome: "Gyarados",
-        tipo1: "Água",
-        tipo2: "Voador",
-        peso: "235,0 kg",
-        altura: "6,5 m",
-      },
-      {
-        nome: "Lapras",
-        tipo1: "Água",
-        tipo2: "Gelo",
-        peso: "220,0 kg",
-        altura: "2,5 m",
-      }
-    );
+{
+  "acknowledged": true,
+  "matchedCount": 1,
+  "modifiedCount": 1
+}
+
     `;
 
     returnText.style.color = "#92c255";
@@ -566,6 +551,7 @@ img {
 body {
   background-color: #131f24;
   user-select: none;
+  overflow: hidden;
 }
 #prof {
   margin: 320px 0 0 100px;
