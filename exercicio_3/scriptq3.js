@@ -36,7 +36,7 @@ btnVerify.addEventListener("click", () => {
   const rodape = document.getElementById("rodape");
 
   if (qSelect == 0) {
-    window.alert("Selecione uma alternativa");
+    console.log("Selecione uma alternativa");
   } else if (qSelect == 4) {
     rodape.style.opacity = "0"; // Iniciar a transição de opacidade
     setTimeout(() => {
@@ -1035,15 +1035,26 @@ alternativa4Selected.classList.add("none");
 
 let qSelect = 0;
 
-
+btnVerify.style.backgroundColor = "#6d5f6d28";
+btnVerify.style.border = "2px solid #6d5f6d28";
+btnVerify.style.borderBottom = "8px solid #6d5f6d2d";
+btnVerify.style.cursor = "no-drop";
 
 function selecaoDeAlternativas() {
   alternativa1.addEventListener("click", () => {
     if ( qSelect == 0 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d";
+      btnVerify.style.border = "2px solid #665b66";
+      btnVerify.style.borderBottom = "8px solid #5F555F"; 
+      btnVerify.style.cursor = "pointer";
       qSelect = 1;
       alternativa1Selected.classList.remove("none");
       alternativa1.classList.add("alternativa1Select");
     } else if ( qSelect == 1 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d28";
+      btnVerify.style.border = "2px solid #6d5f6d28";
+      btnVerify.style.borderBottom = "8px solid #6d5f6d2d";
+      btnVerify.style.cursor = "no-drop";
       qSelect = 0;
       alternativa1Selected.classList.add("none");
       alternativa1.classList.remove("alternativa1Select");
@@ -1052,10 +1063,18 @@ function selecaoDeAlternativas() {
 
   alternativa2.addEventListener("click", () => {
     if ( qSelect == 0 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d";
+      btnVerify.style.border = "2px solid #665b66";
+      btnVerify.style.borderBottom = "8px solid #5F555F"; 
+      btnVerify.style.cursor = "pointer";
       qSelect = 2;
       alternativa2Selected.classList.remove("none");
       alternativa2.classList.add("alternativa2Select");
     } else if ( qSelect == 2 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d28";
+      btnVerify.style.border = "2px solid #6d5f6d28";
+      btnVerify.style.borderBottom = "8px solid #6d5f6d2d";
+      btnVerify.style.cursor = "no-drop";
       qSelect = 0;
       alternativa2Selected.classList.add("none");
       alternativa2.classList.remove("alternativa2Select");
@@ -1064,10 +1083,18 @@ function selecaoDeAlternativas() {
 
   alternativa3.addEventListener("click", () => {
     if ( qSelect == 0 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d";
+      btnVerify.style.border = "2px solid #665b66";
+      btnVerify.style.borderBottom = "8px solid #5F555F"; 
+      btnVerify.style.cursor = "pointer";
       qSelect = 3;
       alternativa3Selected.classList.remove("none");
       alternativa3.classList.add("alternativa3Select");
     } else if ( qSelect == 3 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d28";
+      btnVerify.style.border = "2px solid #6d5f6d28";
+      btnVerify.style.borderBottom = "8px solid #6d5f6d2d";
+      btnVerify.style.cursor = "no-drop";
       qSelect = 0;
       alternativa3Selected.classList.add("none");
       alternativa3.classList.remove("alternativa3Select");
@@ -1076,10 +1103,18 @@ function selecaoDeAlternativas() {
 
   alternativa4.addEventListener("click", () => {
     if ( qSelect == 0 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d";
+      btnVerify.style.border = "2px solid #665b66";
+      btnVerify.style.borderBottom = "8px solid #5F555F"; 
+      btnVerify.style.cursor = "pointer";
       qSelect = 4;
       alternativa4Selected.classList.remove("none");
       alternativa4.classList.add("alternativa4Select");
     } else if ( qSelect == 4 ) {
+      btnVerify.style.backgroundColor = "#6d5f6d28";
+      btnVerify.style.border = "2px solid #6d5f6d28";
+      btnVerify.style.borderBottom = "8px solid #6d5f6d2d";
+      btnVerify.style.cursor = "no-drop";
       qSelect = 0;
       alternativa4Selected.classList.add("none");
       alternativa4.classList.remove("alternativa4Select");

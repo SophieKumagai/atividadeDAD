@@ -45,7 +45,7 @@ bt_entrar.addEventListener("click", () => {
   } else {
     // abrir nova página html
     audio.pause();
-    window.open("../exercicio_1/index.html", "_self");
+    window.open("../exercicio_1/indexq1.html", "_self");
   }
 });
 
